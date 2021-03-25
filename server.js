@@ -49,6 +49,6 @@ app.get('/api/ffChar/:charName', (request, response) => {
     }
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`FF server running on port ${PORT}`)
 })
